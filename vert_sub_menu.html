@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Отображаем подменю при наведении</title>
+		<style>
+		html, body{margin:0;
+padding:0;}
+		.main-menu {width: 200px;}
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    color: #0088CC;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+}
+
+.main-menu a:hover {
+    background: #F5F5F5;
+}
+
+.main-menu > li {
+    position: relative;
+	list-style:none;
+}
+
+
+.main-menu .sub-menu {
+    position: absolute;
+    top: 5px;
+    left: 170px;
+    z-index: 10;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #FCF8E3;
+}
+
+/* Cелектор для подменю, если навести мышь */
+/* на родительский элемент верхнего меню */
+.sub-menu { display:none;}
+
+.main-menu > li:hover .sub-menu{
+    display: block;
+  
+}
+		</style>
+    </head>
+    <body>
+        <ul class="main-menu">
+            <li><a href="#company">О компании</a></li>
+            <li><a href="#services">Услуги</a>
+                <ul class="sub-menu">
+                    <li><a href="#1">Разработка</a></li>
+                    <li><a href="#2">Продвижение</a></li>
+                    <li><a href="#3">Контекст</a></li>
+                </ul>
+            </li>
+            <li><a href="#team">Сотрудники</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </body>
+</html>

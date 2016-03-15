@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Испытание: вертикальное меню</title>
+		<style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 430px;
+    min-height: 280px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background: #ecf0f1;
+}
+.main-menu {
+width:1200px;
+padding: 0;
+margin: 0;
+}
+.main-menu li {
+display: inline-block;
+padding: 0;
+margin: 0;}
+.main-menu a {
+display:block;
+text-decoration:none;
+color:white;
+background:#2980B9;
+margin-right:-4px;
+border-left: 2px solid #2C3E50;
+padding:10px 14px 10px 15px;
+}
+.active a {
+background:#1ABC9C;
+}
+.main-menu li:last-child a {
+margin-right:-2px;
+padding-right:40px;
+}
+		</style>
+		
+    </head>
+    <body>
+         <ul class="main-menu">
+            <li class="active">
+                <a href="/courses">Курсы</a>
+                <ul>
+                    <li><a href="/courses/4">Знакомство</a></li>
+                    <li><a href="/courses/42">Селекторы</a></li>
+                    <li><a href="/courses/45">Позиционирование</a></li>
+                </ul>
+            </li>
+            <li><a href="/demos">Демонстрации</a></li>
+            <li><a href="/public_profiles">Участники</a></li>
+            <li><a href="/achievments">Достижения</a></li>
+        </ul>
+  
+    </body>
+</html>
